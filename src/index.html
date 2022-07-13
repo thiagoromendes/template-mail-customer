@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unimed Grande Florianópolis</title>
+    <style type="text/css">
+        
+        :root {
+        --background: #F5F5F6;
+        --green: #00945E;
+        --green-dark: #006A5B;
+        --background-content: #FFFFFF;
+        --text-title: #FFFFFF;
+        --text-green: #006A5B;
+        }
+
+        * {
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        outline:0;
+        }
+
+        body {
+            background: var(--background);
+            -webkit-font-smoothing: antialiased;
+        }
+        body, input, button {
+            font-family: serif;
+            font-size: 16px;
+        }
+        h1,h2,h3,h4,h5,h6, strong {
+            font-weight: 500;
+        }
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            margin: 100px auto;
+            width: 700px;
+            height: 2200px;
+            background-color: var(--background-content);
+        }
+
+        header {
+            height: 240px;
+        }
+
+        #top {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 700px;
+            height: 40px;
+            background-color: var(--green-dark);
+        }
+
+        #logo {
+            position: relative;
+            top: 20px;
+            width: 80px;
+            height: 40px;
+        }
+
+        #bottom {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            background-color: var(--green);
+            width: 700px;
+            height: 120px;
+        }
+
+        #bottom span {
+            position: relative;
+            top: 70px;
+            color: var(--text-title);
+            font-size: 24px;
+            font-weight: bold;
+        }
+       
+        #rugf {
+            position: relative;
+            top: -90px;
+            width: 120px;
+            height: 160px;;
+
+        }
+
+        #content-text {
+            position: relative;
+            left: 15%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        #hello {
+            font-weight: bold;
+            padding: 10px 0;
+        }
+
+        p #text-green {
+            color: var(--text-green);
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>    
+    <div id="content">
+        <header>
+            <div id="top">
+                <img id="logo" src="assets/img/logo@2x.png" alt="">
+            </div>
+            <div id="bottom">                
+                <span>Solicitação de {Service Type}</span>
+            </div>                
+            <img id="rugf" src="assets/img/RUGF@3x@2x.png" alt="">
+        </header>
+        <div id="content-text">
+            <h2 id="hello">Olá, {User Name}</h2>
+            <p>
+                <span id="text-green">
+                    Sua solicitação de {Service Type} foi efetuada com sucesso. <br>
+                    Confira abaixo os detalhes:
+                </span>
+            </p>
+        </div>      
+    </div>
+</body>
+</html>
