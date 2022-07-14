@@ -9,11 +9,17 @@
         
         :root {
         --background: #F5F5F6;
+        --background-container: #FFFFFF;
+        --background-content: #F5F5F6;
+        --background-contacts: #F5F5F6;
+        --background-faq: #B1D34B;
+        --background-footer: #DCDFE2;
         --green: #00945E;
         --green-dark: #006A5B;
-        --background-content: #FFFFFF;
         --text-title: #FFFFFF;
         --text-green: #006A5B;
+        --line: #9EA1A2;
+        --border-white : #FFFFFF;
         }
 
         * {
@@ -35,20 +41,67 @@
             font-weight: 500;
         }
 
-        #content {
-            display: flex;
-            flex-direction: column;
-            margin: 100px auto;
-            width: 700px;
-            height: 2200px;
-            background-color: var(--background-content);
-        }
-
         header {
             height: 240px;
         }
 
-        #top {
+        .bold { 
+            font-weight: bold;
+        }
+
+        .spacing {
+            padding-bottom: 5px;
+        }
+
+        .content-section-title {
+            font-weight: bold;
+            color: var(--green-dark);
+            padding-bottom: 15px;
+        }
+
+        .text-green {
+            color: var(--text-green);
+            font-weight: bold;
+        }
+
+        .line-content {
+            margin: -5px 25px 0 25px; 
+        }
+
+        .link-none-decoration {
+            text-decoration: none;
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto 20px auto;
+            width: 700px;
+            background-color: var(--background-container);
+        }
+
+        #channel-type {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 10%;
+            padding-bottom: 20px;
+        }
+
+        #attachments {
+            position: relative;
+            left: 10%;
+        }
+
+        #line-container {
+            position: relative;
+            bottom: -50px;
+            margin: 0 60px 0 60px;
+            border: 1px solid var(--line) ;
+            opacity: 0.5;
+        }
+
+        #header-top {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -64,7 +117,7 @@
             height: 40px;
         }
 
-        #bottom {
+        #header-bottom {
             display: flex;
             flex-direction: row;
             justify-content: center;
@@ -73,7 +126,7 @@
             height: 120px;
         }
 
-        #bottom span {
+        #header-bottom span {
             position: relative;
             top: 70px;
             color: var(--text-title);
@@ -89,33 +142,168 @@
 
         }
 
+        #hello {
+            font-weight: bold;
+            padding: 10px 0;
+        }  
+
         #content-text {
             position: relative;
-            left: 15%;
+            left: 10%;
             display: flex;
             flex-direction: column;
             justify-content: center;
         }
-        
-        #hello {
-            font-weight: bold;
-            padding: 10px 0;
+
+        #content {
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
+            background-color: var(--background-content);
+        }     
+
+        #content-number-register {
+            display: flex;
+            flex-direction: column;
+            margin: 40px;
         }
 
-        p #text-green {
-            color: var(--text-green);
+        #content-requester{
+            display: flex;
+            flex-direction: column;
+            margin: 30px 40px;
+        }
+
+        #content-solicitation{
+            display: flex;
+            flex-direction: column;
+            margin: 30px 40px;
+        }
+
+        #contacts {
+            position: relative;
+            bottom: -100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 30px 30px 30px;
+            padding: 20px;
+            background-color: var(--background-contacts);
+            border: 3px solid var(--border-white);
+            border-radius: 20px;
+        }
+
+        #contact-text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             font-weight: bold;
         }
 
+        #faq {
+            position: relative;
+            margin: 10px;
+            background-color: var(--background-faq);
+            padding: 20px 80px;
+            border-radius: 40px;
+        }
+
+        #faq span {
+
+            color: var(--green-dark);
+            font-weight: bold;
+        }
+
+        #phone {
+            display: flex;
+            flex-direction: row;
+            padding-bottom: 10px;
+        }
+
+        #phone span {
+            padding-left: 10px;
+            color: var(--green-dark);
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        #phone img {
+            width: 20px;
+            height: 22px;
+        }
+
+        #footer {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding: 100px 50px 60px 50px;
+            background-color: var(--background-footer);
+        }
+
+        #logo-footer {
+            width: 110px;
+            height: 60px;
+        }
+
+        #app {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #app-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-right: 10px;
+        }
+
+        #app-icon span {
+            color: var(--green-dark);
+            font-size: 8px;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        #app-icon img {
+            width: 44px;
+            height: 44px;
+        }
+
+        #app-store {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #app-store img {
+            padding-bottom: 5px;
+        }
+
+        #social-media img {
+            padding-left: 10px;
+        }
+
+        #disclaimer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #disclaimer span {
+            padding-bottom: 20px;
+            font-size: 10px;
+        }
     </style>
 </head>
 <body>    
-    <div id="content">
+    <div id="container">
         <header>
-            <div id="top">
+            <div id="header-top">
                 <img id="logo" src="assets/img/logo@2x.png" alt="">
             </div>
-            <div id="bottom">                
+            <div id="header-bottom">                
                 <span>Solicitação de {Service Type}</span>
             </div>                
             <img id="rugf" src="assets/img/RUGF@3x@2x.png" alt="">
@@ -123,12 +311,124 @@
         <div id="content-text">
             <h2 id="hello">Olá, {User Name}</h2>
             <p>
-                <span id="text-green">
+                <span class="text-green">
                     Sua solicitação de {Service Type} foi efetuada com sucesso. <br>
                     Confira abaixo os detalhes:
                 </span>
             </p>
+        </div>
+        <div id="content">
+          <div id="content-number-register">
+            <div class="spacing">
+                <span class="bold">N PROTOCOLO: </span>
+                <span >{}</span>
+            </div>
+            <div>
+                <span class="bold">N SOLICITAÇÃO: </span>
+                <span >{}</span>
+            </div>
+          </div>
+          <hr class="line-content">
+          <div id="content-requester">
+            <h3 class="content-section-title">SOLICITANTE:</h3>
+            <div class="spacing">
+                <span class="bold">Nome:</span>
+                <span>{}</span>
+            </div>
+            <div class="spacing">
+                <span class="bold">Documento: </span>
+                <span>{}</span>
+            </div>
+            <div class="spacing">
+                <span class="bold">Carteirinha: </span>
+                <span>{}</span>
+            </div>     
+          </div>
+          <hr class="line-content">
+          <div id="content-solicitation">
+            <h3 class="content-section-title">DADOS DA SOLICITAÇÃO:</h3>
+            <div class="spacing">
+                <span class="bold">Metadata: </span>
+                <span>{}</span>
+            </div> 
+          </div>
+          
+        </div>
+        <div id="channel-type">
+            <span>Solicitação efetuada pelo {ApplicationType}</span>
+            <span>Data {TimeStamp}</span>
+        </div>
+        <div id="attachments">
+            <span class="text-green">
+                Seus arquivos foram enviados juntos à sua solicitação.
+            </span>
+        </div>
+        <hr id="line-container">
+        <div id="contacts">
+            <div id="contact-text">
+                <span>Quer saber mais?</span>
+                <span>Entre em contato com a gente!</span>
+            </div>
+            <a 
+                class="link-none-decoration" 
+                href="https://www.unimed.coop.br/site/web/florianopolis/ugf-tire-suas-duvidas" 
+                target="_blank">
+                <div id="faq">
+                    <span>Acessar FAQ</span>
+                </div>
+            </a>
+            
+            <div id="phone">
+                <img src="assets/img/telephone.png" alt="">
+                <span>0800 048 3500</span>
+            </div>
+            <img src="assets/img/ans.png" alt="">
+        </div>
+        <div id="footer">      
+            <img id="logo-footer" src="assets/img/logo@2x.png" alt="">
+            <div id="app">
+                <div id="app-icon">
+                    <span>Baixe o app</span>
+                    <img src="assets/img/icon-app.png" alt="">
+                </div>
+                <div id="app-store">
+                    <a class="link-none-decoration" target="_blank" href="https://apps.apple.com/br/app/cliente-ugf/id1228337689?platform=iphone">
+                        <img src="assets/img/loja_apple.png" alt="App Store">
+                    </a>
+                    <a class="link-none-decoration" target="_blank" href="https://play.google.com/store/apps/details?id=br.com.unimedflorianopolis.app.cliente&hl=pt_BR&gl=US">
+                        <img src="assets/img/loja_googleplay.png" alt="Google Play">
+                    </a>
+                </div>
+            </div>       
+            <div id="social-media">
+                <a class="link-none-decoration" target="_blank" href="https://www.linkedin.com/company/1030613/">
+                    <img src="assets/img/icon-linkedin.png" alt="Linkedin Unimed">
+                </a>
+                <a class="link-none-decoration" target="_blank" href="https://www.instagram.com/unimedflorianopolis/">
+                    <img src="assets/img/icon-instagran.png" alt="Instagran Unimed">    
+                </a>
+                <a class="link-none-decoration" target="_blank" href="https://www.facebook.com/UnimedGrdFlorianopolis/">
+                    <img src="assets/img/icon-facebook.png" alt="Facebook Unimed">    
+                </a>
+                <a class="link-none-decoration" target="_blank" href="https://twitter.com/unimedfln">
+                    <img src="assets/img/icon-twitter.png" alt="Twitter Unimed">    
+                </a>
+                <a class="link-none-decoration" target="_blank" href="https://www.youtube.com/c/unimedfln">
+                    <img src="assets/img/icon-youtube.png" alt="Youtube Unimed">    
+                </a>
+            </div>
         </div>      
+    </div>
+    <div id="disclaimer">
+        <span >
+            UNIMED GRANDE FLORIANÓPOLIS - TODOS OS DIREITOS RESERVADOS - 
+            <a href="https://www.unimed.coop.br/site/web/florianopolis/transparencia" target="_blank">
+                POLÍTICA DE PRIVACIDADE
+            </a>
+        </span>
+        <span >
+            Esta é uma mensagem automática. Por favor, não responda este e-mail.
+        </span>
     </div>
 </body>
 </html>
