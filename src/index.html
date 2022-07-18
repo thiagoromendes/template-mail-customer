@@ -122,8 +122,8 @@
         #logo {
             position: relative;
             top: 2vh;
-            width: 5.85vw;
-            height: 4.80vh;
+            width: 4vw;
+            height: 5vh;
         }
 
         #header-bottom {
@@ -147,9 +147,9 @@
         #rugf {
             position: relative;
             top: -8.5vh;
-            width: 8.8vw;
+            width: 6.5vw;
             height: 17vh;
-
+            
         }
 
         #hello {
@@ -306,6 +306,258 @@
             padding-bottom: 20px;
             font-size: 0.625rem;
         }
+
+        @media (max-width: 900px) {
+            header {
+                width: 80vw;
+                height: 14vh;
+            }
+            .spacing {
+                padding-bottom: 0.5vh;
+            }
+
+            .content-section-title {
+                font-weight: bold;
+                color: var(--green-dark);
+                padding-bottom: 1.5vh;
+                font-size: 0.9rem;
+            }
+
+            .text-green {
+                color: var(--text-green);
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+
+            .line-content {
+                margin: 0 1.9vw 0 1.9vw;
+                border: 1px solid var(--line) ;
+                opacity: 0.5; 
+            }
+
+            #container {
+                display: flex;
+                flex-direction: column;
+                margin: 0 auto 2.15vh auto;
+                width: 80vw;
+                background-color: var(--background-container);
+            }
+
+            #channel-type {
+                display: flex;
+                flex-direction: column;
+                width: 65vw;
+                position: relative;
+                left: 10%;
+                padding-bottom: 2vh;
+                font-size: 0.9rem;
+            }
+
+            #attachments {
+                width: 65vw;
+                position: relative;
+                left: 10%;
+            }
+
+            #line-container {
+                position: relative;
+                bottom: -3.2vh;
+                margin: 0 4.4vw 0 4.4vw;
+                border: 1px solid var(--line) ;
+                opacity: 0.5;
+            }
+
+            #header-top {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                width: 80vw;
+                height: 2vh;
+                background-color: var(--green-dark);
+            }
+
+            #logo {
+                position: relative;
+                top: 1vh;
+                width: 8vw;
+                height: 2.5vh;
+            }
+
+            #header-bottom {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                background-color: var(--green);
+                width: 80vw;
+                height: 8vh;
+            }
+
+            #header-bottom span {
+                position: relative;
+                height: 2.6vh;
+                top: 5vh;
+                color: var(--text-title);
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        
+            #rugf {
+                position: relative;
+                top: -6vh;
+                width: 14vw;
+                height: 11vh;
+                
+            }
+
+            #hello {
+                font-weight: bold;
+                padding: 0.2vh 0 1vh 0;
+            }  
+
+            #content-text {
+                width: 70vw;
+                position: relative;
+                left: 10%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 0.8rem;
+            }
+
+            #content {
+                display: flex;
+                flex-direction: column;
+                margin: 2vh 3vw 2vh 3vw;
+                background-color: var(--background-content);
+            }     
+
+            #content-number-register {
+                display: flex;
+                flex-direction: column;
+                margin: 2vh 3vw 2vh 3vw;
+            }
+
+            #protocol, #solicitation {
+                font-size: 0.8rem;
+            }
+
+            #content-requester{
+                display: flex;
+                flex-direction: column;
+                margin: 2vh 3vw 2vh 3vw;
+            }
+
+            #name, #document, #card {
+                font-size: 0.8rem;
+            }
+
+            #content-solicitation{
+                display: flex;
+                flex-direction: column;
+                margin: 2vh 3vw 2vh 3vw;
+            }
+
+            #metadata {
+                font-size: 0.8rem;
+            }
+
+            #contacts {
+                position: relative;
+                bottom: -8vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 3vw 2vh 3vw;
+                padding: 2.5vw;
+                background-color: var(--background-contacts);
+                border: 3px solid var(--border-white);
+                border-radius: 20px;
+            }
+
+            #contact-text{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                font-weight: bold;
+                font-size: 0.9rem;
+            }
+
+            #faq {
+                position: relative;
+                margin: 1.5vw;
+                background-color: var(--background-faq);
+                padding: 1.2vh 12vw;
+                border-radius: 40px;
+            }
+
+            #phone {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 1vh;
+            }
+
+            #phone span {
+                padding-left: 1vw;
+                color: var(--green-dark);
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            #phone img {
+                width: 3vw;
+                height: 1.3vh;
+            }
+
+            #footer {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                padding: 8vh 3.5vw 2vh 3.5vw;
+                background-color: var(--background-footer);
+            }
+
+            #logo-footer {
+                width: 12vw;
+                height: 4vh;
+            }
+
+            #app-icon {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-right: 2vw;
+            }
+
+            #app-icon span {
+                color: var(--green-dark);
+                font-size: 0.5rem;
+                font-weight: bold;
+                padding-bottom: 1vw;
+            }
+
+            #app-icon img {
+                width: 6.5vw;
+                height: 3.5vh;
+            }
+
+            #app-store img {
+                padding-bottom: 0.2vh;
+                width: 12vw;
+                height: 2.4vh;
+            }
+
+            #social-media img {
+                padding-left: 1vw;
+                width: 4.5vw;
+                height: 1.8vh;
+            }
+
+            #disclaimer span {
+                padding-bottom: 2vh;
+                font-size: 0.45rem;
+            }
+        }
     </style>
 </head>
 <body>    
@@ -331,11 +583,11 @@
         <div id="content">
           <div id="content-number-register">
             <div class="spacing">
-                <span class="bold">N PROTOCOLO: </span>
+                <span class="bold" id="protocol">N PROTOCOLO: </span>
                 <span >{}</span>
             </div>
             <div>
-                <span class="bold">N SOLICITAÇÃO: </span>
+                <span class="bold" id="solicitation">N SOLICITAÇÃO: </span>
                 <span >{}</span>
             </div>
           </div>
@@ -343,15 +595,15 @@
           <div id="content-requester">
             <h3 class="content-section-title">SOLICITANTE:</h3>
             <div class="spacing">
-                <span class="bold">Nome:</span>
+                <span class="bold" id="name">Nome:</span>
                 <span>{}</span>
             </div>
             <div class="spacing">
-                <span class="bold">Documento: </span>
+                <span class="bold" id="document">Documento: </span>
                 <span>{}</span>
             </div>
             <div class="spacing">
-                <span class="bold">Carteirinha: </span>
+                <span class="bold" id="card">Carteirinha: </span>
                 <span>{}</span>
             </div>     
           </div>
@@ -359,14 +611,14 @@
           <div id="content-solicitation">
             <h3 class="content-section-title">DADOS DA SOLICITAÇÃO:</h3>
             <div class="spacing">
-                <span class="bold">Metadata: </span>
+                <span class="bold" id="metadata">Metadata: </span>
                 <span>{}</span>
             </div> 
           </div>
           
         </div>
         <div id="channel-type">
-            <span>Solicitação efetuada pelo {ApplicationType}</span>
+            <span>Solicitação efetuada pelo {ChannelType}</span>
             <span>Data {TimeStamp}</span>
         </div>
         <div id="attachments">
@@ -430,7 +682,7 @@
             </div>
         </div>      
     </div>
-    <div id="disclaimer">
+    <footer id="disclaimer">
         <span >
             UNIMED GRANDE FLORIANÓPOLIS - TODOS OS DIREITOS RESERVADOS - 
             <a href="https://www.unimed.coop.br/site/web/florianopolis/transparencia" target="_blank">
@@ -440,6 +692,6 @@
         <span >
             Esta é uma mensagem automática. Por favor, não responda este e-mail.
         </span>
-    </div>
+    </footer>
 </body>
 </html>
